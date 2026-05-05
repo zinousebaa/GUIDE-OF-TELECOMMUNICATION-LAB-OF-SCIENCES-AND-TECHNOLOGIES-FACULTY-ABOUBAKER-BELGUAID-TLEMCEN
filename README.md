@@ -3,70 +3,152 @@ This repo is a guide for the use of the 3D printing machine in the lab of teleco
 
 
 
-In this repo, you need to do two key things:
-  1/ install the file of the programme you find attached to this repo:
-  
+# 🖨️ CoLiDo Cubic 3D Printer — Lab Usage Guide
 
-  the file is for the program you'll use to turn the 3D project into a G-code that the machine can understand and print using it. The program is calld Simplify3D,
-  <img width="284" height="177" alt="images" center src="https://github.com/user-attachments/assets/e058ba99-bbce-454a-b1f6-85f6f61c8ac7"  />
+> **Telecommunications Laboratory — Faculty of Sciences and Technologies**
+> Aboubaker Belkaïd University, Tlemcen
 
-  Due to testing many programs, we found that this program is the most compatible one with the specifications of the machine you use suposetly. This program is 
-  not free, so you need to follow these steps to make it work.
-    1/ enter the file and search for Simplify3D-4.0.0-windows-installer.exe / Simplify3D-4.0.0-windows-x64-installer.exe ( it depend on what's the version that 
-    suits your pc ) and install the file. 
-    <img width="378" height="80" alt="image" src="https://github.com/user-attachments/assets/ee110664-d83d-44a9-8099-cb87e70cb055" />
-    2/ follow the steps of installation until you finish and close the pannel.
-    3/ ones you finish go to the location where you installed the app. there , look for the " Interface.dll " file and rename it to "Interface.dl1".
-    4/ copy the "Interface.dll" you find in the crack file that's attached to this repo into the same location and paste it there. 
-    5/ ones you finished you can now open it with now issues. 
-    <img width="1919" height="1017" alt="image" src="https://github.com/user-attachments/assets/b8d59e69-4c0c-4cea-931d-79414d08434c" />
-    P.S. : if you find a problem in installation reed the reed me files that is attached in the cruck file . 
+This guide covers the complete workflow for using the **CoLiDo Cubic** FDM 3D printer in the lab. Follow each step carefully to minimize waste of materials, time, and costs.
 
+---
 
-  2/ regulate the 3D printer :
+## 📋 Table of Contents
 
+1. [Software Installation (Simplify3D)](#1-software-installation-simplify3d)
+2. [Printer Setup & Calibration](#2-printer-setup--calibration)
+3. [Printing Workflow](#3-printing-workflow)
+4. [Printer Specifications & Settings](#4-printer-specifications--settings)
 
-  The printer that you use is CoLiDo Cubic , this version is a standard FDM printer using 1.75mm filament and a 0.4mm nozzle.The printer officially supports PLA, ABS, and TPU filament at 1.75mm diameter and we can propose for you these settings :
-                                              
-                                                
-                                                Setting                        ValueLayer 
-                                                Height                  0.2mm (balanced quality/speed)
-                                                Print Speed                  40–50 mm/s
-                                                Nozzle Temp                  200–210°C (PLA) 
-                                                Bed Temp                        55–60°C
-                                                Infill                          15–20% for normal parts
-                                                Cooling Fan                  100% for PLA
-                                                Supports                  Enable only if needed
+---
 
+## 1. Software Installation (Simplify3D)
 
-follow these steps to use it 
-    1/ after connecting and setting the printer as the manual provided by the manufacturer, turn it on 
-    2/ ones it tuned on, go to preheat and click on cool. 
-    3/ after that, go to control and set it to home posiition.
-    4/ use the setings to make the gup between the nozzle and the plate of print to 1mm in the Z axis.
-    5/ there is mode of motor control, use it to configur the plate in every corner of the plate. keep the distance between the nozzle and the plate les then 1mm and to verify that, use a thin paper and the screws bellow the plate, when the paper is fixed release the screw up the pont the paper starts to move, keep doing that until you finish.
-    6/Now the plate is calibrated, you can start printing.
+The slicer used in this lab is **Simplify3D v4.0.0** — it converts your 3D model into G-code that the printer can execute.
 
-3/ guide of printing:
-  To print, you need first to create the 3D object you want, to do that you have to use one of the 3D conception tools and programs, for example, there is the SolidWorks program.
-  <img width="442" height="619" alt="image" src="https://github.com/user-attachments/assets/346f80da-4bd3-45f5-833d-b5bdf0a5b8de" />
-in the end of the work you have to do:
-    1/ save your file for any modification in the future.
-    <img width="461" height="110" alt="image" src="https://github.com/user-attachments/assets/c7279e21-13f6-4cc4-b6cf-c1e6cb0aa602" />
-    2/ export the file as an .stl file format , that make it legible to Simplify3D or any other 3D printor software. 
-    <img width="922" height="609" alt="image" src="https://github.com/user-attachments/assets/729e76d7-4a44-4b79-9288-bbc4f5c8c434" />
-    3/ open simplify3D and go click on the import button. Select the file you want and click on select.
-    <img width="235" height="137" alt="image" src="https://github.com/user-attachments/assets/1d7b7554-8c3d-4e1c-b4b4-c46fa1b3576b" />
-    4/ choose the position that you want the object to be printed on and take on considiration to choose the best postion that make the worke faster and wastless of the metiral , eviod using supports only in case where you need to. the higher there is a meterial in the air need to be printer or farest than a continues point from top to buttom the more there wil be need to support or the structure you print will collapse.
-    then select "prepare to print" 
-    <img width="236" height="478" alt="image" src="https://github.com/user-attachments/assets/24d48cb8-a14b-463d-81ae-126ea28c12c3" />
-    5/ verify the time, the layers and setings and then, click on "save toolpaths to disk" . it will give you the path to save a Gcode of the project to a specific disck/flash memory disk of your own 
-    <img width="191" height="182" alt="image" src="https://github.com/user-attachments/assets/c9b03a2f-792f-471b-9051-f9cc81f65cb9" />
+### Installation Steps
 
+1. Open the files attached to this repository and locate one of the following installers depending on your system:
 
-the software is easy to use, if you want to make changes of the setings according to the usage you need you must check more documentation of the program and printer.
+![Simplify3D installers](img_installer.png)
 
-hope this repo give you an easy and understandeful way to oppirate the machine.
+   - `Simplify3D-4.0.0-windows-installer.exe` *(32-bit)*
+   - `Simplify3D-4.0.0-windows-x64-installer.exe` *(64-bit — recommended)*
 
+2. Run the installer and follow the on-screen steps until completion, then close the installer.
 
-    
+3. Navigate to the folder where Simplify3D was installed.
+
+4. Find the file named `Interface.dll` and **rename it** to `Interface.dl1` (replace the last letter `l` with the number `1`).
+
+5. Copy the `Interface.dll` file from the **crack folder** in this repository and paste it into the same installation directory.
+
+6. Simplify3D is now ready to use.
+
+> ⚠️ If you encounter installation issues, refer to the README file included inside the crack folder.
+
+---
+
+## 2. Printer Setup & Calibration
+
+### Turn On & Pre-heat
+
+1. Connect and power on the printer.
+2. On the printer menu, go to **Preheat** → select **Cool** (to start at a neutral state).
+
+### Homing & Z-Axis Setup
+
+3. Go to **Control** → set the printer to **Home Position**.
+4. Adjust the Z-axis so the gap between the nozzle and the print bed is approximately **1 mm**.
+
+### Bed Leveling
+
+5. Using the **motor control mode**, position the nozzle over each corner of the print bed.
+6. For each corner, slide a thin sheet of paper between the nozzle and the bed.
+7. Adjust the screw beneath the bed: tighten until the paper is held firmly, then loosen just until the paper can slide with slight resistance.
+8. Repeat for all four corners.
+
+✅ The bed is now calibrated and you are ready to print.
+
+---
+
+## 3. Printing Workflow
+
+### Step 1 — Design Your 3D Model
+
+Use any 3D modeling tool to design your object. A recommended option for engineering work is **SolidWorks**.
+
+![3D model in SolidWorks](img_solidworks_model.png)
+
+### Step 2 — Save & Export as STL
+
+First, save your project file in its native format for future edits:
+
+![SolidWorks Save menu](img_save_menu.png)
+
+Then export it as a `.stl` file — this format is readable by Simplify3D and all standard slicer software:
+
+![Save as STL dialog](img_save_stl.png)
+
+### Step 3 — Open Simplify3D & Import Your Model
+
+Launch Simplify3D. You will see the main interface with the virtual print bed:
+
+![Simplify3D main interface](img_simplify3d_ui.png)
+
+Click the **Import** button and select your `.stl` file:
+
+![Import button](img_import_btn.png)
+
+### Step 4 — Position the Model & Prepare to Print
+
+Orient your model on the virtual print bed to minimize print time, material usage, and the need for support structures.
+
+> 💡 **Tip:** Any part of the model suspended in mid-air and far from a continuous vertical support will require support material. Avoid supports whenever possible by rotating the object.
+
+Once satisfied with positioning, click **Prepare to Print!**:
+
+![Prepare to Print button](img_prepare_print.png)
+
+### Step 5 — Slice & Save G-code to USB
+
+Review the estimated print time, layer preview, and settings. When ready, click **Save Toolpaths to Disk** and save the `.gcode` file directly to your USB flash drive:
+
+![Save Toolpaths to Disk](img_save_toolpaths.png)
+
+### Step 6 — Print
+
+Insert the USB flash drive into the printer, select the file from the printer's menu, and start the print.
+
+---
+
+## 4. Printer Specifications & Settings
+
+**Printer:** CoLiDo Cubic  
+**Type:** FDM (Fused Deposition Modeling)  
+**Nozzle diameter:** 0.4 mm  
+**Filament diameter:** 1.75 mm  
+**Supported materials:** PLA, ABS, TPU  
+
+### Recommended Slicer Settings
+
+| Setting | Recommended Value |
+|---|---|
+| Layer Height | 0.2 mm |
+| Print Speed | 40 – 50 mm/s |
+| Nozzle Temperature | 200 – 210 °C (PLA) |
+| Bed Temperature | 55 – 60 °C |
+| Infill | 15 – 20% (standard parts) |
+| Cooling Fan | 100% (PLA) |
+| Support Structures | Only when necessary |
+
+---
+
+## 📝 Notes
+
+- For advanced settings, refer to the official Simplify3D documentation and the CoLiDo Cubic user manual.
+- Always return the printer to the **Home Position** after use.
+- Do not leave prints unattended for extended periods.
+
+---
+
+*We hope this guide provides a clear and practical way to operate the machine. Good luck with your projects!*
